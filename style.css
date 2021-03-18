@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(#615dad, #ffc8da);
+  line-height: 1.5;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  color: white;
+}
+
+.text {
+  background-color: #283e50;
+}
+
+.foto {
+  border-radius: 10px 10px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: auto;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+  height: 40px;
+}
+
+.hrat {
+  background-color: #0197f6;
+  height: 40px;
+}
+
+.pravidla a:hover {
+  background-color: #1cbb96;
+}
+
+.hrat a:hover {
+  background-color: #0090e9;
+}
