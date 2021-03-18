@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#615dad, #ffc8da);
+  background: linear-gradient(#e66465, #9198e5);
   line-height: 1.5;
   text-align: center;
   font-family: sans-serif;
@@ -7,15 +7,23 @@ body {
 
 h1 {
   font-family: 'Lobster', cursive;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: lighter;
+  margin-bottom: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 380px;
   color: white;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+p {
+  padding: 0 20px 15px 20px;
 }
 
 .text {
@@ -51,4 +59,10 @@ a {
 
 li {
   list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 380px;
 }
