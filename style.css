@@ -29,17 +29,16 @@ h1 {
 a {
   text-decoration: none;
   color: white;
-  padding: auto;
+  display: block;
+  padding: 10px 0px;
 }
 
 .pravidla {
   background-color: #1fcca4;
-  height: 40px;
 }
 
 .hrat {
   background-color: #0197f6;
-  height: 40px;
 }
 
 .pravidla a:hover {
@@ -48,4 +47,8 @@ a {
 
 .hrat a:hover {
   background-color: #0090e9;
+}
+
+li {
+  list-style-type: none;
 }
