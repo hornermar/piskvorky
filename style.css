@@ -1,8 +1,22 @@
 body {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#615dad, #ffc8da);
   line-height: 1.5;
   text-align: center;
   font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  color: white;
+  margin: 80px 0 300px 0;
+}
+
+.foto {
+  border-radius: 7px 7px 0 0;
 }
 
 h1 {
@@ -10,28 +24,24 @@ h1 {
   font-size: 50px;
   font-weight: lighter;
   margin-bottom: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 380px;
-  color: white;
-  position: absolute;
-  top: 20%;
-  left: 40%;
-}
-
-p {
-  padding: 0 20px 15px 20px;
+  margin-top: 15px;
 }
 
 .text {
   background-color: #283e50;
 }
 
-.foto {
-  border-radius: 10px 10px 0 0;
+p {
+  padding: 0 20px 15px 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -43,6 +53,7 @@ a {
 
 .pravidla {
   background-color: #1fcca4;
+  margin-bottom: 1px;
 }
 
 .hrat {
@@ -55,14 +66,4 @@ a {
 
 .hrat a:hover {
   background-color: #0090e9;
-}
-
-li {
-  list-style-type: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  width: 380px;
 }
