@@ -3,16 +3,16 @@ body {
   line-height: 1.5;
   text-align: center;
   font-family: sans-serif;
+  background-size: cover;
+  height: 100vh;
 }
 
 .container {
-  position: relative;
-  left: 40%;
   display: flex;
   flex-direction: column;
   width: 380px;
   color: white;
-  margin: 80px 0 300px 0;
+  margin: 50px auto;
 }
 
 .foto {
@@ -66,4 +66,9 @@ a {
 
 .hrat a:hover {
   background-color: #0090e9;
+}
+
+.pravidla a:focus,
+.hrat a:focus {
+  outline: 1px solid black;
 }
