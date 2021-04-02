@@ -73,8 +73,8 @@ a {
   background-color: #0090e9;
 }
 
-.pravidla a:focus,
-.hrat a:focus {
+.rules-btn a:focus,
+.play-btn a:focus {
   outline: 1px solid black;
 }
 
