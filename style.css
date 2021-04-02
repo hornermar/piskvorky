@@ -81,7 +81,7 @@ a {
 
 .rules-text {
   background-color: #283e50;
-  width: 380px;
+  width: 372px;
   margin: 50px auto;
   border-radius: 7px 7px 0 0;
   color: white;
@@ -116,11 +116,18 @@ figure {
   font-style: italic;
 }
 
-/* @media (min-width: 800px) {
-  .container-rules {
+@media (min-width: 800px) {
+  .rules-text {
+    width: 770px;
+  }
+  .rules-img {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
-  .rules-img img {
-    max-width: 50%;
+  figure {
+    max-width: 45%;
+    margin: 0 0 30px 0;
   }
-} */
+}
