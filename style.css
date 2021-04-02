@@ -19,13 +19,7 @@ body {
   margin: 50px auto;
 }
 
-.container-rules {
-  width: 500px;
-  color: white;
-  margin: 50px auto;
-}
-
-.foto {
+.image {
   border-radius: 7px 7px 0 0;
 }
 
@@ -37,7 +31,7 @@ h1 {
   margin-top: 15px;
 }
 
-.text {
+.text-index {
   background-color: #283e50;
 }
 
@@ -61,20 +55,20 @@ a {
   padding: 10px 0px;
 }
 
-.pravidla {
+.rules-btn {
   background-color: #1fcca4;
   margin-bottom: 1px;
 }
 
-.hrat {
+.play-btn {
   background-color: #0197f6;
 }
 
-.pravidla a:hover {
+.rules-btn a:hover {
   background-color: #1cbb96;
 }
 
-.hrat a:hover {
+.play-btn a:hover {
   background-color: #0090e9;
 }
 
@@ -83,26 +77,50 @@ a {
   outline: 1px solid black;
 }
 
-.rules {
-  text-align: left;
-  margin: 0;
+/* ------------------------Pravidla---------------------------- */
+
+.rules-text {
+  background-color: #283e50;
+  width: 380px;
+  margin: 50px auto;
+  border-radius: 7px 7px 0 0;
+  color: white;
 }
 
-.rules-img img {
-  width: 145px;
+.container-rules h1 {
+  padding-top: 30px;
 }
 
-.rules img {
+.rules-list {
+  padding: 5px 75px 20px 70px;
+}
+
+.rules-list img {
   width: 1em;
   height: 1em;
   filter: invert(100%);
 }
 
-.rules li {
-  padding-left: 15px;
+.rules-img img {
+  max-width: 100%;
+}
+
+.rules-list li {
+  padding-left: 10px;
   padding-top: 10px;
+  text-align: left;
 }
 
 figure {
-  font-size: 10px;
+  font-size: 16px;
+  font-style: italic;
 }
+
+/* @media (min-width: 800px) {
+  .container-rules {
+    display: flex;
+  }
+  .rules-img img {
+    max-width: 50%;
+  }
+} */
