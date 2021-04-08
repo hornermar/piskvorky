@@ -8,7 +8,6 @@ body {
   text-align: center;
   font-family: sans-serif;
   background-repeat: no-repeat;
-  /* background-size: cover; */
   min-height: 100vh;
 }
 
@@ -56,7 +55,8 @@ a {
   padding: 10px 0px;
 }
 
-.rules-btn {
+.rules-btn,
+.home-btn {
   background-color: #1fcca4;
   margin-bottom: 1px;
 }
@@ -65,7 +65,8 @@ a {
   background-color: #0197f6;
 }
 
-.rules-btn a:hover {
+.rules-btn a:hover,
+.home-btn a:hover {
   background-color: #1cbb96;
 }
 
@@ -74,7 +75,7 @@ a {
 }
 
 .rules-btn a:focus,
-.play-btn a:focus {
+.play-btn a:focus .home-btn a:focus {
   outline: 1px solid black;
 }
 
@@ -96,7 +97,7 @@ a {
   padding: 5px 75px 20px 70px;
 }
 
-.rules-list img {
+.symbol {
   width: 1em;
   height: 1em;
   filter: invert(100%);
@@ -136,10 +137,41 @@ figure {
 /* -------------------------------------------------- */
 
 .container-play {
+  max-width: 80vmin;
+  color: white;
+  margin: auto;
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.container-play ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.container-play a {
+  padding: 0;
+}
+
+.container-play .icon {
+  padding: 10px;
+  border-radius: 10%;
+  margin-left: 10px;
+}
+
+.play-button {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  max-width: 80vmin;
 }
 
 .container-play button {
@@ -147,5 +179,6 @@ figure {
   width: calc(100% / 10);
   height: 40px;
   /* height: calc(100% / 10); */
-  border: 0.2px solid #636281;
+  border: 0.2px solid #283e50;
+  opacity: 50%;
 }
