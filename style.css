@@ -75,7 +75,8 @@ a {
 }
 
 .rules-btn a:focus,
-.play-btn a:focus .home-btn a:focus {
+.play-btn a:focus,
+.home-btn a:focus {
   outline: 1px solid black;
 }
 
@@ -164,7 +165,6 @@ h2 {
 }
 
 .container-play .icon {
-  padding: 10px;
   border-radius: 10%;
   margin-left: 10px;
 }
@@ -176,9 +176,13 @@ h2 {
 
 .container-play button {
   padding: 0;
-  width: calc(100% / 10);
+  width: 10%;
   height: 40px;
-  /* height: calc(100% / 10); */
-  border: 0.2px solid #283e50;
+  border: 1.5px solid #283e50;
   opacity: 50%;
+}
+
+button:hover,
+button:focus {
+  opacity: 80%;
 }
