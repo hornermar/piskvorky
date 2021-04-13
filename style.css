@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+/* * {
+  outline: 1px solid black;
+} */
+
 body {
   background: linear-gradient(#615dad, #ffc8da);
   line-height: 1.5;
@@ -102,6 +106,7 @@ a {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+  vertical-align: -0.1em;
 }
 
 .rules-img img {
@@ -119,9 +124,9 @@ figure {
   font-style: italic;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .rules-text {
-    width: 770px;
+    max-width: 750px;
   }
   .rules-img {
     display: flex;
@@ -139,19 +144,22 @@ figure {
 
 .container-play {
   max-width: 80vmin;
+  display: flex;
+  flex-direction: column;
   color: white;
   margin: auto;
 }
 
 .panel {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
-h2 {
+.panel p {
+  font-size: 23px;
   margin: 0;
+  padding: 0;
 }
 
 .container-play ul {
@@ -172,17 +180,19 @@ h2 {
 .play-button {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .container-play button {
   padding: 0;
-  width: 10%;
-  height: 40px;
+  width: calc(80vmin / 10);
+  height: calc(80vmin / 10);
   border: 1.5px solid #283e50;
   opacity: 50%;
 }
 
 button:hover,
 button:focus {
+  cursor: pointer;
   opacity: 80%;
 }
