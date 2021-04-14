@@ -52,7 +52,8 @@ ul {
   padding: 0;
 }
 
-a {
+.container-index a,
+.container-rules a {
   text-decoration: none;
   color: white;
   display: block;
@@ -142,7 +143,7 @@ figure {
 
 /* -------------------------------------------------- */
 
-.container-play {
+.container-game {
   max-width: 80vmin;
   display: flex;
   flex-direction: column;
@@ -157,39 +158,42 @@ figure {
 }
 
 .panel p {
-  font-size: 23px;
+  font-size: 28px;
   margin: 0;
   padding: 0;
 }
 
-.container-play ul {
+.container-game ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
 
-.container-play a {
-  padding: 0;
-}
-
-.container-play .icon {
+.container-game a {
   border-radius: 10%;
   margin-left: 10px;
+  display: block;
+  padding: 9px 9px 4px 9px;
 }
 
-.play-button {
+.game-button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  border: 1.5px solid #283e50;
 }
 
-.container-play button {
+.container-game button {
   padding: 0;
-  width: calc(80vmin / 10);
-  height: calc(80vmin / 10);
-  border: 1.5px solid #283e50;
+  width: 8vmin;
+  height: 8vmin;
+  border: 1px solid #283e50;
   opacity: 50%;
 }
+
+/* .container-game button:nth-child(10n) {
+  flex-grow: 1;
+} */
 
 button:hover,
 button:focus {
