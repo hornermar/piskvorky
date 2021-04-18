@@ -183,15 +183,15 @@ figure {
   border: 1.5px solid #283e50;
 }
 
-.container-game button {
+.single-game-button {
   padding: 0;
   width: 8vmin;
   height: 8vmin;
-  border: 1px solid #283e50;
+  border: 1.5px solid #283e50;
   opacity: 50%;
 }
 
-/* .container-game button:nth-child(10n) {
+/* .single-game-button:nth-child(10n) {
   flex-grow: 1;
 } */
 
@@ -199,4 +199,18 @@ button:hover,
 button:focus {
   cursor: pointer;
   opacity: 80%;
+}
+
+.board__field--circle {
+  background-image: url(podklady/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.board__field--cross {
+  background-image: url(podklady/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
 }
