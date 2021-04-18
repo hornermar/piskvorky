@@ -10,6 +10,7 @@ const addSymbol = (event) => {
     event.target.classList.add('board__field--cross');
     player = 'circle';
   }
+  event.target.removeEventListener('click', addSymbol);
 };
 
 const btnsElm = document.querySelectorAll('.single-game-button');
