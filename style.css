@@ -217,10 +217,6 @@ button:focus {
   animation-name: animateSymbol;
 }
 
-button:disabled {
-  opacity: 100%;
-}
-
 @keyframes animateSymbol {
   from {
     background-size: 10%;
