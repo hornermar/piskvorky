@@ -180,15 +180,15 @@ figure {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 1.5px solid #283e50;
+  border: 1.5px solid black;
+  opacity: 50%;
 }
 
 .single-game-button {
   padding: 0;
   width: 8vmin;
   height: 8vmin;
-  border: 1.5px solid #283e50;
-  opacity: 50%;
+  border: 1.5px solid black;
 }
 
 /* .single-game-button:nth-child(10n) {
@@ -198,19 +198,23 @@ figure {
 button:hover,
 button:focus {
   cursor: pointer;
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .board__field--circle {
   background-image: url(podklady/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 75%;
+  background-size: 70%;
 }
 
 .board__field--cross {
   background-image: url(podklady/cross.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 75%;
+  background-size: 70%;
+}
+
+button:disabled {
+  opacity: 100%;
 }
