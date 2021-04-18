@@ -107,7 +107,8 @@ ul {
   width: 1em;
   height: 1em;
   filter: invert(100%);
-  vertical-align: -0.1em;
+  vertical-align: -0.15em;
+  padding-left: 0.1em;
 }
 
 .rules-img img {
@@ -181,7 +182,6 @@ figure {
   flex-wrap: wrap;
   width: 100%;
   border: 1.5px solid black;
-  opacity: 50%;
 }
 
 .single-game-button {
@@ -189,11 +189,9 @@ figure {
   width: 8vmin;
   height: 8vmin;
   border: 1.5px solid black;
+  background-color: transparent;
+  background: rgba(255, 230, 230, 0.5);
 }
-
-/* .single-game-button:nth-child(10n) {
-  flex-grow: 1;
-} */
 
 button:hover,
 button:focus {
@@ -202,10 +200,12 @@ button:focus {
 }
 
 .board__field--circle {
-  background-image: url(podklady/circle.svg);
+  background-image: url('podklady/circle.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+  animation-duration: 0.2s;
+  animation-name: animateSymbol;
 }
 
 .board__field--cross {
@@ -213,8 +213,19 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+  animation-duration: 0.2s;
+  animation-name: animateSymbol;
 }
 
 button:disabled {
   opacity: 100%;
+}
+
+@keyframes animateSymbol {
+  from {
+    background-size: 10%;
+  }
+  to {
+    background-size: 70%;
+  }
 }
