@@ -181,14 +181,14 @@ figure {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 1.5px solid black;
+  border: 1px solid black;
 }
 
 .single-game-button {
   padding: 0;
   width: 8vmin;
   height: 8vmin;
-  border: 1.5px solid black;
+  border: 1px solid black;
   background-color: transparent;
   background: rgba(255, 230, 230, 0.5);
 }
