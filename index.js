@@ -15,7 +15,18 @@ const addSymbol = (event) => {
     symbolElm.src = 'podklady/circle.svg';
   }
   event.target.disabled = true;
-  isWinningMove(event.target);
+
+  if (isWinningMove(event.target)) {
+    setTimeout(() => {
+      if (player === 'cross') {
+        confirm('Vyhrává hráč s kolečkem. Spustit novou hru?');
+        location.reload();
+      } else {
+        confirm('Vyhrává hráč s křížkem. Spustit novou hru?');
+        location.reload();
+      }
+    }, 200);
+  }
 };
 
 const btnsElm = document.querySelectorAll('.single-game-button');
@@ -69,8 +80,8 @@ const isWinningMove = (btnsElm) => {
     i < boardSize - 1 &&
     symbol === getSymbol(getField(origin.row, i + 1))
   ) {
-    inRow++;
-    i++;
+    inRow += 1;
+    i += 1;
   }
 
   if (inRow >= 5) {
@@ -79,4 +90,29 @@ const isWinningMove = (btnsElm) => {
   }
 
   // Sloupec
+  let inColumn = 1;
+
+  //nahoře
+  i = origin.row;
+  while (i > 0 && symbol === getSymbol(getField(i - 1, origin.column))) {
+    inColumn += 1;
+    i -= 1;
+  }
+
+  //dole
+  i = origin.row;
+  while (
+    i < boardSize - 1 &&
+    symbol === getSymbol(getField(i + 1, origin.column))
+  ) {
+    inColumn += 1;
+    i += 1;
+  }
+
+  if (inColumn >= 5) {
+    console.log('vyhrál');
+    return true;
+  }
+  console.log('nic');
+  return false;
 };
